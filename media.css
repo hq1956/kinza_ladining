@@ -1,0 +1,396 @@
+/* ========== 📱 МАЛЕНЬКИЕ УСТРОЙСТВА (мобильные телефоны) ========== */
+@media (max-width: 600px) {
+    .nav__wrapper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .nav__actions {
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    .nav__wrapper.active {
+        display: flex;
+    }
+
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .burger-btn span {
+        background-color: white;
+        height: 2px;
+        width: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .burger-btn.active span {
+        background-color: black;
+    }
+
+    .burger-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 2px);
+        transform-origin: center;
+        width: 16px;
+    }
+
+    .burger-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(2px, -2px);
+        transform-origin: center;
+        width: 16px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .table-gallery {
+        display: block;
+        width: 100%;
+    }
+
+    .string-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .cell-gallery {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 3px;
+    }
+
+    .image-block {
+        height: 140px;
+    }
+
+    .gallery-photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .karusel {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .text-karusel div {
+        padding: 5%;
+    }
+
+    .karusel h4 {
+        font-size: 1.2rem;
+    }
+
+    .karusel p {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    .batton {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .batton a {
+        display: block;
+        padding: 12px;
+        font-size: 0.85em;
+    }
+
+    .action__sect {
+        padding-top: 2em;
+    }
+
+    .organisation .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .offer, .price {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .offer .header-gallery,
+    .price .header-gallery {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .offer .feature-card__text,
+    .price .feature-card__text {
+        font-size: 0.95rem;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .conteiner-for-img {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img-org {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .icon-and-text {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .img-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .price h5 {
+        text-align: center;
+        font-size: 0.95em;
+    }
+
+    .price span {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        padding: 30px 15px;
+    }
+
+    .menu .container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu__main {
+        width: 45%;
+        padding: 15px;
+    }
+
+    .img_menu {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu__text {
+        font-size: 0.95rem;
+        margin-top: 10px;
+    }
+
+    .menu_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .dishes {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .dishes img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description_menu {
+        padding: 12px;
+    }
+
+    .dish-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .dish-header h5 {
+        font-size: 1rem;
+    }
+
+    .dish_price {
+        font-size: 1rem;
+    }
+
+    .item_description {
+        font-size: 0.95rem;
+    }
+
+    .menu_button {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .menu_button .batton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu_button .batton-class {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .delivery_title {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+    }
+
+    .svg__section {
+        gap: 40px;
+    }
+
+    .svgimage {
+        width: 180px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .adress .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .adress_block {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .adress_block img {
+        width: 50%;
+        max-width: 180px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+
+    .img_contain {
+        justify-content: center;
+    }
+
+    .fixed-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .call {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* ========== 📲 СРЕДНИЕ УСТРОЙСТВА (планшеты) ========== */
+@media (min-width: 601px) and (max-width: 991px) {
+    .adress_block {
+        width: 70%;
+    }
+
+    .svgimage {
+        width: 220px;
+    }
+
+    .delivery_title {
+        font-size: 2em;
+    }
+
+    .menu__main {
+        width: 40%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fixed-button {
+        width: 60px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .burger-btn span {
+        width: 24px;
+    }
+}
+
+/* ========== 💻 БОЛЬШИЕ УСТРОЙСТВА (ноутбуки и десктопы) ========== */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .adress_block {
+        width: 40%;
+    }
+
+    .svg__section {
+        gap: 80px;
+    }
+
+    .menu__main {
+        width: 30%;
+    }
+
+    .img_menu {
+        width: 70px;
+        height: 70px;
+    }
+
+    .delivery_title {
+        font-size: 2.2em;
+    }
+
+    .footer p {
+        font-size: 1em;
+    }
+
+    .fixed-button {
+        width: 70px;
+        height: 70px;
+    }
+}

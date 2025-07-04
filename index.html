@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinZa - Рестораны грузинской кухни</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <title>Карта с контролем</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js.js" defer></script>
+</head>
+<body>
+    
+    <a href="#" class="fixed-button"><img src="images/icons/call.png" alt="call" class="call"></a>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://cafekinza.ru/" class="logo">
+                    <img src="./images/icons/logo-1.svg" alt="KinZa" width="105" height="105">
+                </a>
+
+                <div class="nav__wrapper">
+                    <div class="dropdown">
+                        <button class="dropdown__btn"><a href="https://cafekinza.ru/kinza-na-komendantskom/">КинZа на Комендантском</a></button>
+                        <ul class="dropdown__menu">
+                            <li><a href="#section_1">О нас</a></li>
+                            <li><a href="#section_2">Меню</a></li>
+                            <li><a href="#section_3">Банкеты</a></li>
+                            <li><a href="#section_4">Акции</a></li>
+                            <li><a href="#section_5">Галерея</a></li>
+                            <li><a href="#section_6">Доставка</a></li>
+                            <li><a href="#section_7">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown__btn"><a href="https://cafekinza.ru/kinza-na-chkalovskom/">КинZа на Чкаловском</a></button>
+                        <ul class="dropdown__menu">
+                            <li><a href="#section_1">О нас</a></li>
+                            <li><a href="#section_2">Меню</a></li>
+                            <li><a href="#section_3">Банкеты</a></li>
+                            <li><a href="#section_4">Акции</a></li>
+                            <li><a href="#section_5">Галерея</a></li>
+                            <li><a href="#section_6">Доставка</a></li>
+                            <li><a href="#section_7">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav__actions">
+                    <a href="https://www.instagram.com/cafekinza/" class="social-link" aria-label="Instagram">
+                        <img src="images/icons/instagram.png" alt="instagram" width="23" height="23">
+                    </a>
+                    <a href="https://vk.com/cafekinza" class="social-link" aria-label="Vkontakte">
+                        <img src="images/icons/vkontakte.png" alt="vkontakte" width="23" height="23">
+                    </a>
+                    <a href="#section_3" class="btn btn--text">Банкеты</a>
+                    <a href="#section_6" class="btn btn--text">Доставка</a>
+                </div>
+
+                <button class="burger-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <video class="hero__video" autoplay muted loop playsinline>
+                <source src="video-welcome/welcome-1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает HTML5 видео.
+            </video>
+            <div class="container">
+                <h1 class="hero__title">РЕСТОРАНЫ ГРУЗИНСКОЙ КУХНИ</h1>
+            </div>
+        </section>
+
+        <section class="welcome section" id="section_1">
+            <div class="container">
+                <h2 class="welcome__title scroll-animate">Добро пожаловать в КинZа</h2>
+                <p class="welcome__text scroll-animate">
+                    Кто хоть раз побывал у нас, непременно вернётся сюда опять, кто побывал у нас дважды — становится нашим любимым гостем, кто трижды переступил порог — становится нашим другом.
+                    Настоящие шедевры грузинской кухни специально для Вас готовит наш шеф-повар.
+                </p>
+            </div>
+        </section>
+
+        <section class="features section">
+            <div class="container">
+                <div class="features__grid">
+                    <article class="feature-card scroll-animate">
+                        <div class="feature-card__image">
+                            <img src="images/welcome/function-1.jpg" alt="Атмосфера" loading="lazy">
+                        </div>
+                        <h3 class="feature-card__title">Атмосфера</h3>
+                        <p class="feature-card__text">
+                            Ресторан КинZа предлагает вам окунуться в настоящий праздник вкусовых ощущений. Горячие и холодные блюда, легкие закуски и умопомрачительные десерты, вино и другие напитки — все это едва ли сможет оставить кого-то равнодушным.
+                        </p>
+                    </article>
+
+                    <article class="feature-card scroll-animate">
+                        <div class="feature-card__image">
+                            <img src="images/welcome/function-2.jpg" alt="Банкеты" loading="lazy">
+                        </div>
+                        <h3 class="feature-card__title">Банкеты</h3>
+                        <p class="feature-card__text">
+                            Мы предлагаем Вам отметить самые главные события в своей жизни у нас. Специально для вас повара приготовят блюда авторской грузинской и европейской кухни. Совместно с вами подбираем то, что будет актуально именно к Вашему мероприятию.
+                        </p>
+                    </article>
+
+                    <article class="feature-card scroll-animate">
+                        <div class="feature-card__image">
+                            <img src="images/welcome/function-3.jpg" alt="Сервис" loading="lazy">
+                        </div>
+                        <h3 class="feature-card__title">Сервис</h3>
+                        <p class="feature-card__text">
+                            Весь наш персонал рад создать незабываемую атмосферу задушевности, особое настроение в дни корпоративов и потрясающую дружелюбную атмосферу грузинского гостеприимства в дни проведения торжеств.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="section_5">
+            <div class="conteiner">
+                <h3 class="preheader scroll-animate">Вместо слов</h3>
+                <h2 class="header-gallery scroll-animate">Фотогалерея</h2>
+            </div>
+            <table class="table-gallery">
+                <tr class="string-gallery">
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-1.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-2.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-3.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-4.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="string-gallery">
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-5.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-6.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-7.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-8.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="string-gallery">
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-9.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-10.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-11.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-12.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="string-gallery">
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-13.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-14.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-15.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-16.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="string-gallery">
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-17.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-21.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-19.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                    <td class="cell-gallery">
+                        <div class="image-block">
+                            <img src="images/gallery/picture-20.jpg" alt="photo" class="gallery-photo scroll-animate">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <section class="action__sect" id="section_4">
+            <div class="container">
+                <h3 class="preheader scroll-animate">Не пропустите</h3>
+                <h2 class="header-gallery scroll-animate">Наши акции</h2>
+                <div class="karusel">
+                    <article class="text-karusel scroll-animate">
+                        <img src="images/welcome/scroll-action-1.jpg" alt="photo-1">
+                        <div>
+                            <h4 class="header-karusel">
+                                Нет времени ждать? Закажите по телефону</h4>
+                            <p class="feature-card__text">
+                                Для Вашего удобства! Сделайте заказ по телефону перед приходом к нам или возьмите ваши любимые блюда с собой!
+                            </p>
+                            <batton class="batton">
+                                <a href="https://cafekinza.ru/kinza-na-chkalovskom/" class="batton-class">на Чкаловском</a>
+                            </batton>
+                            <batton class="batton">
+                                <a href="https://cafekinza.ru/kinza-na-komendantskom/#menu" class="batton-class">на Комендантском</a>
+                            </batton>
+                        </div>
+                    </article>
+                    <article class="text-karusel scroll-animate">
+                        <img src="images/welcome/scroll-action-2.jpg" alt="photo-2">
+                        <div>
+                            <h4 class="header-karusel">
+                                Домашний обед 620 ₽</h4>
+                            <p class="feature-card__text">
+                                Для Вашего удобства! Сделайте заказ по телефону перед приходом к нам или возьмите ваши любимые блюда с собой!
+                            </p>
+                            <batton class="batton">
+                                <a href="https://cafekinza.ru/kinza-na-chkalovskom/" class="batton-class">на Чкаловском</a>
+                            </batton>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="organisation" id="section_3">
+            <div class="container">
+                <!-- Банкетное предложение -->
+                <article class="offer scroll-animate">
+                    <h3 class="header-gallery scroll-animate">Организация и проведение <span>банкетов</span></h3>
+                    <div class="conteiner-for-img scroll-animate">
+                        <img src="images/gallery/picture-1.jpg" alt="банкет" class="img-org">
+                        <img src="images/gallery/picture-14.jpg" alt="интерьер ресторана" class="img-org">
+                    </div>
+                    <h5 class="feature-card__text scroll-animate">
+                        Грузинский ресторан КинZа предлагает вам окунуться в настоящий праздник вкусовых ощущений. Горячие и холодные блюда, легкие закуски и умопомрачительные десерты, вино и другие напитки — все это едва ли сможет оставить кого-то равнодушным. Мы предлагаем Вам отметить самые главные события в своей жизни у нас.
+                    </h5>
+                    <div class="icon-and-text scroll-animate">
+                        <img src="images/icons/table.png" alt="иконка стола" class="img-icon">
+                        <p class="feature-card__text">
+                            Специально для вас повара приготовят блюда авторской грузинской и европейской кухни. Стандартного классического банкетного меню у нас нет, мы совместно с вами подбираем то, что будет актуально именно к Вашему мероприятию.
+                        </p>
+                    </div>
+                </article>
+        
+                <!-- Цены и контакты -->
+                <article class="price scroll-animate">
+                    <h3 class="header-gallery scroll-animate">от 3000 ₽</h3>
+                    <p class="feature-card__text scroll-animate">
+                        Банкет можно подготовить практически под любой бюджет и вкус, ориентировочно от 3000 рублей на персону, более подробно Вы можете узнать у наших администраторов.
+                    </p>
+                    <p class="feature-card__text scroll-animate">
+                        Мы с радостью поможем Вам провести праздник у нас, при этом Вы не будете задумываться обо всех организационных вопросах мероприятия.
+                    </p>
+                    <h5 class="scroll-animate">Будем рады видеть вас!</h5>
+                    <span class="button scroll-animate">На Чкаловском:
+                        <a href="tel:+78129555262">+7 (812) 955 52 62</a>
+                    </span>
+                    <span class="button scroll-animate">На Комендантском:
+                        <a href="tel:+79110369833">+7 (911) 036 98 33</a>
+                    </span>
+                    <div class="conteiner-for-img scroll-animate">
+                        <img src="images/gallery/picture-9.jpg" alt="блюда грузинской кухни" class="img-org">
+                        <img src="images/gallery/picture-16.jpg" alt="банкетный зал" class="img-org">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu animate-group">
+            <div class="container">
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/hachipuri.png" alt="Горячие закуски" class="img_menu">
+                    <h4 class="menu__text">Горячие закуски</h4>
+                </div>
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/lulya.png" alt="Блюда на мангале" class="img_menu">
+                    <h4 class="menu__text">Блюда на мангале</h4>
+                </div>
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/hincal.png" alt="Ручная работа" class="img_menu">
+                    <h4 class="menu__text">Ручная работа</h4>
+                </div>
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/fruit.png" alt="Уникальный вкус" class="img_menu">
+                    <h4 class="menu__text">Уникальный вкус</h4>
+                </div>
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/wine.png" alt="Истинные традиции" class="img_menu">
+                    <h4 class="menu__text">Истинные традиции</h4>
+                </div>
+                <div class="menu__main scroll-animate">
+                    <img src="images/icons/ram.png" alt="Лучшие продукты" class="img_menu">
+                    <h4 class="menu__text">Лучшие продукты</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title__review scroll-animate">Отзывы</h2>
+                <div class="text_reviews scroll-animate">
+                    <div class="button-reviews">
+                        <a href="">&lt;</a>
+                    </div>
+                    <blockquote class="block-reviews">
+                        <p id="review-text" class="text_review"></p>
+                        <span id="review-user" class="user"></span>
+                        <span id="review-role" class="user"><i></i></span>
+                        <div id="review-counter" class="review-counter"></div>
+                    </blockquote>
+                    <div class="button-reviews">
+                        <a href="">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_menu" id="section_2">
+            <div class="container">
+                <h2 class="title__review scroll-animate">Наше меню</h2>
+                <div class="menu_grid">
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-1.jpeg" alt="Хинкали классические">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Хинкали классические, 4шт</h5>
+                                    <div class="dish_price">380₽</div>
+                                </div>
+                                <p class="item_description">Хинкали из говядины и свинины с зеленью. 100г*4шт</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-3.jpg" alt="Хачапури по-мегрельски">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Хачапури по-мегрельски</h5>
+                                    <div class="dish_price">450₽</div>
+                                </div>
+                                <p class="item_description">Хачапури с сыром Сулугуни и запеченным сверху сыром. 350г</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-5.jpg" alt="Шашлык из свиной шеи">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Шашлык из свиной шеи</h5>
+                                    <div class="dish_price">540₽</div>
+                                </div>
+                                <p class="item_description">200г</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-2.jpg" alt="Овощной салат по-грузински">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Овощной салат по-грузински</h5>
+                                    <div class="dish_price">410₽</div>
+                                </div>
+                                <p class="item_description">Салат из огурцов, томатов, красного лука с добавлением грецкого ореха. 220г</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-4.jpg" alt="Пхалеули – грузинское ассорти закусок">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Пхалеули – грузинское ассорти закусок</h5>
+                                    <div class="dish_price">540₽</div>
+                                </div>
+                                <p class="item_description">Биточки из баклажан, шпината, зеленой фасоли и свеклы с пастой из грецких орехов, чеснока и специй. 170г</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dishes scroll-animate">
+                        <img src="images/menu/picture-6.jpg" alt="Оджахури">
+                        <div class="description_menu">
+                            <div class="text_block">
+                                <div class="dish-header">
+                                    <h5>Оджахури</h5>
+                                    <div class="dish_price">530₽</div>
+                                </div>
+                                <p class="item_description">Обжаренная свинина с картофелем, луком и грузинскими специями. 300г</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_button scroll-animate">
+                    <batton class="batton">
+                        <a href="https://cafekinza.ru/kinza-na-komendantskom/" class="batton-class">На Комендантском</a>
+                    </batton>
+                    <batton class="batton">
+                        <a href="https://cafekinza.ru/kinza-na-chkalovskom/" class="batton-class">На Чкаловском</a>
+                    </batton>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery" id="section_6">
+            <div class="conteiner">
+                <h2 class="delivery_title scroll-animate">Доставка</h2>
+                <div class="svg__section">
+                    <a href="https://cafekinza.ru/kinza-na-komendantskom/"><img src="images/icons/коменд.svg" alt="На Комендантском" class="svgimage scroll-animate"></a>
+                    <a href="https://cafekinza.ru/kinza-na-chkalovskom/"><img src="images/icons/чкалов.svg" alt="На Чкаловском" class="svgimage scroll-animate"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map scroll-animate" id="section_8">
+            <div id="map"></div>
+        </section>
+
+        <section class="adress scroll-animate" id="section_7">
+            <div class="container">
+                <div class="adress_block">
+                    <div>
+                        <img src="images/icons/logo-1.svg" alt="на Комендантском">
+                        <a href="https://cafekinza.ru/kinza-na-komendantskom/">на Комендантском</a>
+                    </div>
+                    <p class="feature-card__text">Санкт-Петербург,
+                        <br>пр. Комендантский, 31, кор. 1
+                        <br>12:00 – 00:00  каждый день
+                        <br>+7 (812) 306 45 54    +7 (911) 036 98 33</p>
+                    <a href="#section_8">На карте</a>
+                </div>
+                <div class="adress_block">
+                    <div>
+                        <img src="images/icons/logo-1.svg" alt="на Чкаловском">
+                        <a href="https://cafekinza.ru/kinza-na-chkalovskom/">на Чкаловском</a>
+                    </div>
+                    <p class="feature-card__text">Санкт-Петербург,
+                        <br>пр. Чкаловский, 8
+                        <br>11:00 – 23:30  каждый день
+                        <br>+7 (812) 955 52 62</p>
+                    <a href="#section_8">На карте</a>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer scroll-animate">
+        <div class="container">
+            <p>© 2025 КинZa. Грузинский ресторан КинZa</p>
+            <div class="img_contain">
+                <a href="https://www.instagram.com/cafekinza/"><img src="images/icons/instagram.png" alt="instagram"></a>
+                <a href="https://vk.com/cafekinza"><img src="images/icons/vkontakte.png" alt="vkontakte"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
